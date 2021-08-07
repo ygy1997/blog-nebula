@@ -3,23 +3,22 @@
 	<div class="templatemo-flex-row">
 
 		<!-- siderbar -->
-		<sider ></sider>
+		<sider  ></sider>
 		<!-- Main content -->
 		<div class="templatemo-content col-1 light-gray-bg">
-
 			<!-- navigation -->
-			<navgation ></navgation>
-	
-
-			<!-- content -->
+<!-- 			<navgation ></navgation>
+ -->			<!-- content -->
 			<!-- 首页 -->
 			<blog v-if="$route.path==='/blog'"></blog>
 			<graphAdmin v-else-if="$route.path==='/admin'"></graphAdmin>
 			<visualCore v-else-if="$route.path==='/home'"></visualCore>
+			<articlewords v-else-if="$route.path.startsWith('/articlewords')"></articlewords>
+			<visualCore v-else></visualCore>
 			<!-- footer -->
 			<footer class="text-right footer">
 				<p>博主qq 1054660480
-					| Designed by <a href="http://www.templatemo.com" target="_parent">亢龙无悔</a></p>
+					| Designed by <a href="http://www.codedick.com" target="_parent">亢龙无悔</a></p>
 			</footer>
 		</div>
 	</div>
@@ -29,16 +28,18 @@
 	import sider from './siderBar.vue'
 	import navgation from "./navgation.vue"
 	import visualCore from "../content/visualCore.vue"
-	import blog from "../content/project/blog.vue"
+	import articlewords from "../content/articlewords/articlewords.vue"
+	import blog from "../content/blog/blog.vue"
 	import graphAdmin from "../content/graphAdmin.vue"
+	import Vue from 'vue'
 	const printf = console.log
 	export default {
-
 		components: {
 			'navgation': navgation,
 			'sider': sider,
 			'visualCore': visualCore,
 			'blog': blog,
+			'articlewords':articlewords,
 			'graphAdmin': graphAdmin,
 		},
 		data() {
@@ -47,8 +48,9 @@
 		},
 		created() {
 		},
-		methods: {
-		}
+		methods:{
+			
+		} 
 	}
 </script>
 
@@ -62,11 +64,15 @@
 		position: fixed;
 		bottom: 5px;
 		right: 50px;
+		background: wheat;
+		margin: 15px;
+		padding: 0;
+		border-radius: 7px;
+	}
+	.footer p{
+		margin: 0;
 	}
 
-	/* .templatemo-content{
-		overflow:hidden
-	} */
 	.blog {
 		width: 100%;
 		height: 100%;

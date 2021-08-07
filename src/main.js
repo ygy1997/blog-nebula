@@ -5,14 +5,24 @@ import FastClick from 'fastclick'    // 移动端30ms延迟
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
-
 import VueChimera from "vue-chimera"
+import cytoscape from "cytoscape";
+
+import VTooltip from 'v-tooltip'
+FastClick.attach(document.body)
+
+Vue.use(VTooltip)
+
 Vue.use(VueChimera, {
 	headers: {
 		'Content-Type': 'application/x-www-form-urlencoded',
 		'Access-Control-Allow-Origin':'http://localhost:8000'
 		}
 })
+
+
+Vue.use(cytoscape)
+
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

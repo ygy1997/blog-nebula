@@ -580,8 +580,8 @@ input[type="radio"]:checked + label span {
 	.templatemo-sidebar { width: 200px; } 
 	.templatemo-site-header h1 { font-size: 1.6em; }
 	.square { 
-		width: 20px; 
-		height: 20px;
+		width: 1.25rem; 
+		height: 1.25rem;
 	}
 	.templatemo-left-nav a.active,
 	.templatemo-left-nav a:hover {

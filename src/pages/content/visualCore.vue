@@ -16,14 +16,34 @@
 		</div>
 		<div class="templatemo-flex-row flex-content-row" >
 			<div class="templatemo-content-widget white-bg col-1 text-center"  >
-				<router-link id="blog" to="/blog"><i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">博客</h2>
+				<router-link id="articlewords" to="/articlewords"><i class="fa fa-play-circle fa-lg"></i>
+				<h2 class="text-uppercase">文章抽词</h2>
 				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
 				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
 			</div>
 			<div class="templatemo-content-widget white-bg col-1 text-center"  >
 				<router-link id="blog" to="/blog"><i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">悲惨世界</h2>
+				<h2 class="text-uppercase">决斗链接组卡</h2>
+				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
+				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
+			</div>
+			<div class="templatemo-content-widget white-bg col-1 text-center"  >
+				<router-link id="blog" to="/blog"><i class="fa fa-play-circle fa-lg"></i>
+				<h2 class="text-uppercase">儒林外史</h2>
+				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
+				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
+			</div>
+		</div>
+		<div class="templatemo-flex-row flex-content-row" >
+			<div class="templatemo-content-widget white-bg col-1 text-center"  >
+				<router-link id="articlewords" to="/articlewords"><i class="fa fa-play-circle fa-lg"></i>
+				<h2 class="text-uppercase">文章抽词</h2>
+				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
+				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
+			</div>
+			<div class="templatemo-content-widget white-bg col-1 text-center"  >
+				<router-link id="blog" to="/blog"><i class="fa fa-play-circle fa-lg"></i>
+				<h2 class="text-uppercase">决斗链接组卡</h2>
 				<h3 class="text-uppercase margin-bottom-10">Blog Article</h3>
 				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail"></router-link>
 			</div>
@@ -37,7 +57,7 @@
 		<div class="templatemo-flex-row flex-content-row">
 			<div class="templatemo-content-widget white-bg col-1 text-center">
 				<i class="fa fa-play-circle fa-lg"></i>
-				<h2 class="text-uppercase">添加新库</h2>
+				<h2 class="text-uppercase">undefinded</h2>
 				<h3 class="text-uppercase margin-bottom-10">Film Reviews</h3>
 				<img src="../static/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
 			</div>

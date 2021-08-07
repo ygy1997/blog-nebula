@@ -6,6 +6,11 @@ export default new Router({
 	mode: 'history',
 	routes: [
 		{
+			path: '/',
+			name: '',
+			component: Home,
+		},
+		{
 			path: '/:path',
 			name: '',
 			component: Home,

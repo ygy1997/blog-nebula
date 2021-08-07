@@ -7,14 +7,20 @@
 						<el-menu-item index="1">命令终端</el-menu-item>
 						<el-submenu index="2">
 							<template slot="title">我的工作台</template>
-							<el-menu-item index="2-1">选项1</el-menu-item>
-							<el-menu-item index="2-2">选项2</el-menu-item>
-							<el-menu-item index="2-3">选项3</el-menu-item>
+							<el-menu-item index="2-1">显示点类型</el-menu-item>
+							<el-menu-item index="2-2"></el-menu-item>
+							<el-menu-item index="2-3">显示边类型</el-menu-item>
 							<el-submenu index="2-4">
-								<template slot="title">选项4</template>
+								<template slot="title">创建点</template>
 								<el-menu-item index="2-4-1">选项1</el-menu-item>
 								<el-menu-item index="2-4-2">选项2</el-menu-item>
 								<el-menu-item index="2-4-3">选项3</el-menu-item>
+							</el-submenu>
+							<el-submenu index="2-5">
+								<template slot="title">创建边</template>
+								<el-menu-item index="2-5-1">选项1</el-menu-item>
+								<el-menu-item index="2-5-2">选项2</el-menu-item>
+								<el-menu-item index="2-5-3">选项3</el-menu-item>
 							</el-submenu>
 						</el-submenu>
 					</el-menu>
@@ -55,7 +61,13 @@
 			}
 		},
 		chimera: {
-		   graph: 'http://127.0.0.1:8000/getDb',
+		   graph(){
+			   return {
+				   url:'http://127.0.0.1:8000/getDb',
+				   method: 'POST',
+				   auto: false,  
+			   }
+		   }, 
 		   runGql(){
 			   return {
 				 url:'http://127.0.0.1:8000/runGql/',
